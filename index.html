@@ -1,13 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+	<head>
+		<meta charset="utf-8" />
+		<!-- link CSS file -->
+		<link href="styles.css" rel="stylesheet" />
+		<!-- link font pack from google fonts  -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet">
 
-    <link href="styles.css" rel="stylesheet" />
+		<title>Mark Cheong Portfolio Page</title>
+	</head>
+	<body>
+		<!-- Navigation Bar -->
+		<nav>
+			<div class="nav-container">
+				<!-- Logo -->
+				<div class="logo">
+					<a href="#"><h1>Mark Cheong</h1></a>
+				</div>
+				<!-- Links -->
+				<div class="links-container">
+					<div class="links"> 
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#projects">Projects</a></li>
+						</ul>
+					</div>
+					<div class="links"> 
+						<ul>
+							<li>
+								<a href="mailto:markcheong.chee@gmail.com">
+									<img src="assets/mail.png" alt="mail" />								
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/franktakaema888">
+									<img src="assets/github.png" alt="github" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/mark-cheong-0110b3147/">
+									<img src="assets/linkedin.png" alt="linkedin" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-    <title>Rocket Academy</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+		<!-- Main Content -->
+		<main>
+			<!-- Introduction Section -->
+			<div id="intro">
+				<div class="intro-title">
+					Hi, Mark Here.
+				</div>
+				<div class="intro-subtitle">
+					I like to create stuff sometimes.
+				</div>
+				<div class="intro-desc">
+					I am a Software Engineer from Singapore. I'm fascinated by the world of technolgy and finance, and I like to build things that interest me.
+				</div>
+			</div>
+			<!-- About Me Section -->
+			<div id="about">
+				<div class="section-header">
+					<div class="section-title">
+						/about
+					</div>
+				</div>
+				<div class="about-content">
+					<div class="about-desc">
+						<p>I am currently a Computer Science graduate, passionate about Software Engineering.</p>
+						<p>Apart from work, I'm Interested in exploring new places to eat. I also play field hockey and I like to workout in my free time.</p>
+					</div>
+					<div class="about-image">
+						<img src="assets/sosuke.webp" alt="profile picture" />
+					</div>
+				</div>
+			</div>
+			<!-- My Experience Section -->
+			<div id="experience">
+				<div class="section-header">
+					<div class="section-title">
+						/experience
+					</div>
+				</div>
+				<div class="experience-content">
+					<div class="experience-company">
+						Rocket Academy-
+					</div>
+					<div class="experience-desc">
+						<p>I have experience in Web Development, and I am currently learning more about it.</p>
+					</div>
+				</div>
+			</div>
+			<!-- My Projects Section -->
+			<div id="projects">
+				<div class="section-header">
+					<div class="section-title">
+						/projects
+					</div>
+				</div>
+				<div class="project-container">
+					<div class="project-grid">
+						<div class="project-block">
+							<div class="project-image">
+								<img src="assets/project.avif" alt="project 1" />
+							</div>
+							<div class="project-title">
+								Project 1
+							</div>
+							<div class="project-desc">
+								<p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="project-block">
+							<div class="project-image">
+								<img src="assets/project.avif" alt="project 2" />
+							</div>
+							<div class="project-title">
+								Project 2
+							</div>
+							<div class="project-desc">
+								<p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="project-block">
+							<div class="project-image">
+								<img src="assets/project.avif" alt="project 3" />
+							</div>
+							<div class="project-title">
+								Project 3
+							</div>
+							<div class="project-desc">
+								<p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer-container">
+				<p>&copy; 2024 Built and Designed by Mark Cheong</p>
+			</div>
+		</footer>
+	</body>
 </html>
