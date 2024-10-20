@@ -4,6 +4,10 @@ body {
 	font-family: "NTR", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* Navigation Bar */
 .nav-container {
 	display: flex;
@@ -13,6 +17,7 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	height: 1%;
 	background-color: #0a192f;
 }
 
@@ -21,7 +26,6 @@ body {
 	display: flex;
 	justify-content: center;
 	width: 20%;
-
 }
 
 .links-container {
@@ -94,6 +98,7 @@ a:hover {
 
 .section-header {
 	display: flex;
+	padding-top: 20px;
 	padding-bottom: 40px;
 }
 
@@ -113,7 +118,7 @@ a:hover {
 	text-align: justify;
 }
 
-.about-image img{
+.about-image img {
 	max-width: 300px;
 	height: auto;
 	border-radius: 10px;
@@ -131,3 +136,33 @@ a:hover {
 }
 
 /* projects */
+.project-container {
+	padding-bottom: 70px;
+}
+
+.project-grid {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}
+
+.project-image img{
+	max-width: 300px;
+	border-radius: 10px;
+}
+
+.project-title {
+	font-size: 30px;
+}
+
+.project-desc {
+	font-size: 18px;
+}
+
+/* footer */
+.footer-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 70px;
+}
