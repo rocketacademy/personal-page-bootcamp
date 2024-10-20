@@ -1,13 +1,131 @@
 <!DOCTYPE html>
+<!--Create a portfolio page, that introduces yourself, the projects that you have done, and your contact details.
+
+1. Create a navigation bar // 
+2. Create 3 sections (About/ Work/ Contact)// 
+3. introduce links to each sections-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
 
     <link href="styles.css" rel="stylesheet" />
 
-    <title>Rocket Academy</title>
+    <title>Personal Portfolio Page - Calvin</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <main>
+      <!--Header/ Banner to introduce the Page-->
+      <div class="banner">
+        <h1 class="header">Portfolio Page - Calvin</h1>
+      </div>
+      <!--Start Nav-->
+      <div class="nav-list">
+        <a href="#about-me">About Me</a>
+        <a href="#my-portfolio">My Portfolio</a>
+        <a href="#contact-me">Contact Me</a>
+      </div>
+      <!--End Nav-->
+      <!--Start of the Different Sections-->
+
+      <!--About Me Section-->
+      <div>
+        <section id="about-me" class="about-me">
+          <h2>Hello, my name is Calvin</h2>
+          <img class="portfolio-image" src="images/about-me.jpeg" />
+          <p>
+            A Human Resource Professional, currently doing a Software
+            Engineering Bootcamp with Rocket Academy.
+          </p>
+
+          <p>
+            With more than a decade of experience in Risk analysis, HR and
+            Leadership development, I am looking for new challenges, and
+            interested in transitioning to a more technical role.
+          </p>
+          <p>
+            Please look through some of the projects that I have done previously
+            and reach out!
+          </p>
+        </section>
+      </div>
+
+      <!--Start of Portfolie Sections-->
+      <section id="my-portfolio" class="my-portfolio">
+        <h3 class="portfolio-section-header">
+          A gallery of my previous projects.
+        </h3>
+        <p>
+          These are some of the projects I have worked on during my course with
+          Rocket Academy.
+        </p>
+        <div class="portfolio-grid">
+          <a
+            href="https://cnkh6069.github.io/recipe-site-bootcamp/"
+            target="_blank"
+            class="project-tile"
+            ><img
+              class="portfolio-image"
+              src="images/Recipe-page.jpeg"
+              alt="Recipe Page"
+          /></a>
+          <p>Recipe Page</p>
+
+          <a
+            href="https://cnkh6069.github.io/basics-blackjack/"
+            target="_blank"
+            class="project-tile"
+            ><img
+              class="portfolio-image"
+              src="images/Black-Jack.jpeg"
+              alt="Black-Jack-Game"
+          /></a>
+          <p>Black Jack</p>
+
+          <a href="" target="_blank" class="project-tile"
+            ><img
+              class="portfolio-image"
+              src="images/portfolio.jpeg"
+              alt="Portfolio-Page"
+          /></a>
+          <p>Portfolio Page</p>
+          <a href="" target="_blank" class="project-tile"
+            ><img
+              class="portfolio-image"
+              src="images/wip.jpeg"
+              alt="Work-In-Progress"
+          /></a>
+          <p>Coming Soon...</p>
+        </div>
+      </section>
+      <!--End of Portfolio-->
+      <!--Start of Contact Me-->
+      <section id="contact-me" class="contact-section">
+        <div class="contact-section-header">
+          <h2>Looking forward to work together!</h2>
+          <p>Please feel free to contact me at the following!</p>
+        </div>
+
+        <div class="contact-links">
+          <a
+            href="https://www.linkedin.com/in/calvin-n-b20133237/"
+            target="_blank"
+            class="btn contact-details"
+            >LinkedIN</a
+          >
+          <a
+            href="https://github.com/Cnkh6069"
+            target="_blank"
+            class="btn contact-details"
+            >My GitHub</a
+          >
+          <a href="mailto:kh.calvin25@gmail.com"> Send a mail</a>
+        </div>
+      </section>
+      <!--End of Contact Me-->
+      <footer>
+        <p>This is just a work in progress Portofolio page.</p>
+        <p>Created for Rocket Academy Bootcamp. (C) 2024</p>
+      </footer>
+    </main>
   </body>
 </html>
