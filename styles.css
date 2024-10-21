@@ -1,3 +1,241 @@
-body {
-  background-color: white;
+* {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  background-color: #1E201E;
+  /* delete white spaces around */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #1E201E;
+  width: 100%;
+  height: 8vh;
+  border-bottom: #eee 2px solid;
+  padding-left: 3vw;
+  margin-bottom: 1vw;
+}
+
+.navbar .icon {
+  flex-grow: 1;
+  justify-self: flex-start;
+}
+
+.navbar .icon > img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar .categories {
+  flex-grow: 2;
+  display: flex;
+  gap: 5vw;
+  align-self: center;
+}
+
+.navbar .categories > li {
+  list-style: none;
+}
+
+.navbar .categories > li > a {
+  /* remove underline, adjust font size and add color */
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #eee;
+  width: 100%;
+}
+
+.navbar .categories > li > a:hover {
+  color: #3C3D37;
+}
+
+.navbar > a:hover {
+  color: #3C3D37;
+}
+
+.about {
+  margin: 1vw;
+  text-align: center;
+}
+
+.header {
+  color: #eee;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.pic {
+  position: relative;
+}
+
+.pic > img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.pic > p {
+  color: #ECDFCC;
+  font-size: 2.5rem;
+}
+
+.name {
+  position: absolute;
+  top: 25%;
+  transform: translateX(335%);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.sch {
+  position: absolute;
+  top: 45%;
+  transform: translateX(20%);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.country {
+  position: absolute;
+  top: 70%;
+  transform: translateX(120%);
+  background-color: transparent;
+  z-index: 2;
+}
+
+.intro {
+  color: #eee;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.link > a {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #eee;
+  align-items: center;
+}
+
+.link > a > img {
+  width: 5vw;
+  height: 5vw;
+  background-color: transparent;
+  margin-right: 1vw;
+}
+
+footer {
+  border-top: #eee 2px solid;
+  margin-top: 2vw;
+  padding: 1vw;
+}
+
+footer > a {
+  margin: 1vw;
+  text-decoration: none;
+  color: #eee;
+}
+
+a:hover {
+  color: #3C3D37;
+}
+
+.repo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8vw;
+  row-gap: 4vw;
+  justify-content: center;
+  margin: 3vw;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 1vw;
+}
+
+.project > a {
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.project > a:hover {
+  color: #3C3D37;
+}
+
+.project > a > img {
+  width: 600px;
+  height: 500px;
+}
+
+.project > p {
+  width: 600px;
+  color: #eee;
+  font-size: 1rem;
+}
+
+.project > a > button {
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.project > a > button:hover {
+  background-color: #04AA6D;
+}
+
+.recent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.recent > a > button {
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.recent > a > button:hover {
+  background-color: #04AA6D;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vw;
 }
