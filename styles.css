@@ -6,7 +6,7 @@ body {
   background-color: rgb(255, 242, 216);
 }
 
-#welcome-section {
+.page-title {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 50px;
@@ -53,11 +53,12 @@ h3 {
 .project-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 20px 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 1rem 2rem;
 }
 
-.project-tile img {
+.project-title img {
   width: 400px;
   height: 450px;
 }
